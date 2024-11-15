@@ -521,6 +521,14 @@ function showVictoryScreen(winner) {
         clickSound.play();
         startGame();
     });
+
+    // Iniciar el juego al presionar Enter
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        clickSound.play();
+        startGame();
+    }
+   });
 });
 
 const image = document.getElementById('chicken1');
