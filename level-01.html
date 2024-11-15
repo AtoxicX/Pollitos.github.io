@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pollitos</title>
+    <link rel="shotcut icon" href="rojo-run.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fondo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="body">
+
+    <div class="title-container">
+        <h1 class="h1">Elija un personaje</h1>
+    </div>
+
+    <div class="personajes">
+        <!-- Tabla de selección de personajes para el jugador 1 -->
+        <table class="table" id="player1Table">
+            <tr>
+                <td><p>Jugador 1</p></td>
+            </tr>
+            <tr>
+                <td id="accolla"><img src="accolla.png" class="selector"></td>
+            </tr>
+            <tr>
+                <td id="ageitos"><img src="ageitos.png" class="selector"></td>
+            </tr>
+            <tr>
+                <td id="giachero"><img src="giachero.png" class="selector"></td>
+            </tr>
+            <tr>
+                <td id="marino"><img src="marino.png" class="selector"></td>
+            </tr>
+            <tr>
+                <td id="mario"><img src="mario.png" class="selector"></td>
+            </tr>
+            <tr>
+                <td id="trani"><img src="trani.png" class="selector"></td>
+            </tr>
+            <tr>
+                <td id="zuniga"><img src="zuniga.png" class="selector"></td>
+            </tr>
+        </table>
+
+        <div class="fondo game-container" id="gameContainer">
+            <div id="chicken1" class="chicken gravity-down"></div>
+            <div id="chicken2" class="chicken gravity-down"></div>
+
+            <div id="victoryScreen" class="victory-screen hidden">
+            <h2>¡Victoria!</h2>
+            <div class="winner">
+                <img id="winnerImage" src="" alt="Jugador Ganador" class="winner-chicken">
+                <img src="trophy.png" alt="Trofeo" class="trophy">
+                <p id="winnerName"></p>
+            </div>
+            <button id="retryButton">Reintentar</button>
+        </div>
+
+        <button id="playButton" class="play-button">
+            <div class="triangle"></div>
+        </button>
+        <button id="fullscreenButton" class="fullscreen-button">
+            <i class='bx bx-fullscreen' id="fullscreenButton"></i>
+        </button>
+
+        </div>
+
+        <!-- Tabla de selección de personajes para el jugador 2 -->
+        <table class="table" id="player2Table">
+            <tr>
+                <td><p>Jugador 2</p></td>
+            </tr>
+            <tr>
+                <td id="accolla"><img src="accolla.png" class="selector"></td>
+            </tr>
+            <tr>
+                <td id="ageitos"><img src="ageitos.png" class="selector"></td>
+            </tr>
+            <tr>
+                <td id="giachero"><img src="giachero.png" class="selector"></td>
+            </tr>
+            <tr>
+                <td id="marino"><img src="marino.png" class="selector"></td>
+            </tr>
+            <tr>
+                <td id="mario"><img src="mario.png" class="selector"></td>
+            </tr>
+            <tr>
+                <td id="trani"><img src="trani.png" class="selector"></td>
+            </tr>
+            <tr>
+                <td id="zuniga"><img src="zuniga.png" class="selector"></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <p class="subtitle">Keys= Jugador 1: "A" | jugador 2: "L" </p>
+
+    <audio id="backgroundMusic" src="song1.mp3" loop></audio>
+    <audio id="clickSound" src="jump4.mp3"></audio>
+    <audio id="victorySound" src="winner.mp3"></audio>
+
+    <script src="script-01.js"></script>
+</body>
+</html>

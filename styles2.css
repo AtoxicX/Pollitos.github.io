@@ -1,0 +1,162 @@
+* {
+	padding: 50px;
+	margin: 0%;
+}
+
+body {
+	margin: 20px;
+	display: flex;
+	min-height: 100vh;
+	min-width: 100vh;
+	justify-content: center;
+    margin: 0;
+	transition: background-color 1s ease;
+}
+
+.h1 {
+	margin: 20px;
+	padding: 20px;
+	text-align: center;
+	font-size: 25px;
+}
+
+.selector {
+	display: inline-block;
+	justify-content:  space-between;
+	position: relative;
+
+}
+
+.a1 {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.a2 {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+@import url(fondo.css);
+
+.div1 {
+	top: 100px;
+	left: -250px;
+	display: inline-block;
+	margin-right: 200px;
+	composes: fondo from "fondo.css";
+	cursor: pointer;
+	width: 250px;
+	height: 150px;
+	border: solid 5px green;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.div2 {
+ top: 100px;
+ left: 250px;
+ display: inline-block;
+ margin-left: 200px;
+ composes: fondo from "fondo.css";
+ cursor: pointer;
+ width: 250px;
+ height: 150px;
+ border: solid 5px yellow;
+ border-radius: 15px;
+ overflow: hidden;
+}
+
+.div3 {
+	position: flex
+	justify-content: center;
+	display: flex;
+	padding-bottom: 20px; 
+	margin-top: 70%;
+	left: 565px;
+	background-image: url('glitch.gif');
+	cursor: pointer;
+	width: 250px;
+	height: 150px;
+	border: solid 5px red;
+	border-radius: 15px;
+}
+
+.div1:hover {
+	transition: .5s;
+	transform: scale(1.1);
+}
+
+.div2:hover {
+	transition: .5s;
+	transform: scale(1.1);
+}
+
+.div3:hover {
+	transition: .5s;
+	transform: scale(1.1);
+	box-shadow: 0px 0px 10px 10px white;
+}
+
+/* Botón de Play Personalizado */
+.play-button {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 128, 0, 0.8); /* Verde opaco */
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5; /* Por encima del contenedor de juego */
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: rgba(0, 128, 0, 1); /* Verde más claro al pasar el mouse */
+}
+
+.play-button .triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+.play-button2 {
+ width: 25px;
+ height: 25px;
+ background-color: rgba(0, 128, 0, 0.8); /* Verde opaco */
+ border: none;
+ border-radius: 50%;
+ position: absolute;
+ top: 60%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ z-index: 5; /* Por encima del contenedor de juego */
+ transition: background-color 0.3s;
+}
+
+.play-button2:hover {
+ background-color: rgba(0, 128, 0, 1); /* Verde más claro al pasar el mouse */
+}
+
+.play-button2 .triangle2 {
+ width: 0;
+ height: 0;
+ border-left: 20px solid white;
+ border-top: 12px solid transparent;
+ border-bottom: 12px solid transparent;
+}

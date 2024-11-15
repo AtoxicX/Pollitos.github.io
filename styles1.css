@@ -1,0 +1,250 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del cuerpo */
+body {
+    min-width: 100vh;
+    min-height: 100vh;
+    margin: 200px;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Contenedor para el título y subtítulo */
+.title-container {
+    top: -100px;
+    font-family: magneto, sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.subtitle {
+    top: -10px;
+    font-family: magneto, sans-serif;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    color: #333;
+}
+
+.personajes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selector {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.selector:hover {
+    transform: scale(1.5); 
+    transition: .5s;
+    border-radius: 25px;
+    box-shadow: 0px 3px 15px 5px white;
+}
+
+/* Contenedor del juego */
+.game-container {
+    top: -50px;
+    position: relative;
+    background-image: url(Fondo.gif);
+    background-size: cover;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    overflow: hidden;
+
+    /* Tamaños mínimos para pantallas más grandes */
+    min-width: 1000px;
+    min-height: 600px;
+}
+
+/* Ajuste para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    .game-container {
+        min-width: 800px;
+        min-height: 500px;
+    }
+}
+
+/* Ajuste para pantallas pequeñas (smartphones en modo horizontal) */
+@media (max-width: 768px) {
+    .game-container {
+        min-width: 600px;
+        min-height: 400px;
+    }
+}
+
+/* Ajuste para pantallas muy pequeñas (smartphones en modo vertical) */
+@media (max-width: 480px) {
+    .game-container {
+        min-width: 100%;
+        min-height: 300px;
+        margin-left: 0;
+    }
+}
+
+.fullscreen-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.fullscreen-button:hover {
+    opacity: 1;
+}
+
+
+/* Estilo de los pollos */
+.chicken {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-size: cover;
+    z-index: 2;
+    transition: transform 0s;
+    transform: matrix(180);
+}
+
+/*Animacion de pollos cambiando de gravedad*/
+.chicken.gravity-down {
+    animation: contraccion 0.7s ease-in-out;
+    transform: rotate(0deg) scaleX(1);
+}
+
+.chicken.gravity-up {
+    animation: contraccion 0.7s ease-in-out;
+    transform: rotate(180deg) scaleX(-1);
+}
+
+/* Pollos individuales */
+#chicken1 {
+    left: 50px;
+    top: 275px; /* Posición inicial */
+}
+
+#chicken2 {
+    left: 50px;
+    top: 325px; /* Posición inicial */
+}
+
+/* Estilo de las plataformas */
+.platform {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: blue; /* Color inicial, excluyendo rojo */
+    border: 2px solid black; /* Borde negro que no cambia de color */
+    box-sizing: border-box;
+    border-radius: 5px;
+    z-index: 1; /* Asegura que las plataformas estén por debajo de los pollos */
+}
+
+/* Botón de Play Personalizado */
+.play-button {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 128, 0, 0.8); /* Verde opaco */
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5; /* Por encima del contenedor de juego */
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: rgba(0, 128, 0, 1); /* Verde más claro al pasar el mouse */
+}
+
+.play-button .triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+/* Pantalla de victoria centrada */
+.victory-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.victory-screen.hidden {
+    display: none;
+}
+
+.victory-screen h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.winner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.winner-chicken {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.trophy {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+#winnerName {
+    font-size: 24px;
+}
+
+#retryButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#retryButton:hover {
+    background-color: #218838;
+}

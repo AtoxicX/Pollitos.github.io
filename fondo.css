@@ -1,0 +1,158 @@
+.fondo{
+    margin: 0;
+    position: absolute;
+    overflow-x: hidden;
+    background-image: linear-gradient(#110332, #3029ad);
+    background-attachment: fixed;
+}
+.fondo::before {
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 1200px;
+    margin: 0;
+    animation-name: fondo;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes fondo {
+    0%{
+        left: 0;
+        background-image: 
+        radial-gradient(circle at 10% 14%, #eee .1%, #0000 .2%),
+        radial-gradient(circle at 19% 15%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 10% 50%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 15% 21%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 20% 46%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 30% 15%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 37% 48%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 23% 56%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 25% 72%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 15% 90%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 49% 40%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 25% 32%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 28% 21%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 36% 40%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 21% 90%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 40% 45%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 36% 70%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 45% 78%, #ccc 0%, #0000 .2%),
+
+        /*APARTIR DEL 50%*/
+        radial-gradient(circle at 60% 14%, #eee .1%, #0000 .2%),
+        radial-gradient(circle at 69% 15%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 60% 50%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 65% 21%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 70% 46%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 80% 15%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 87% 48%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 73% 56%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 75% 72%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 65% 90%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 99% 40%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 75% 32%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 78% 21%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 86% 40%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 71% 90%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 90% 45%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 86% 70%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 95% 78%, #ccc 0%, #0000 .2%);
+        background-color: #0000;
+    }
+    100%{
+        left: -1366px;
+        background-image: 
+        radial-gradient(circle at 10% 14%, #eee .1%, #0000 .2%),
+        radial-gradient(circle at 19% 15%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 10% 50%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 15% 21%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 20% 46%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 30% 15%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 37% 48%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 23% 56%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 25% 72%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 15% 90%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 49% 40%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 25% 32%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 28% 21%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 36% 40%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 21% 90%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 40% 45%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 36% 70%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 45% 78%, #ccc 0%, #0000 .2%),
+
+        /*APARTIR DEL 50%*/
+        radial-gradient(circle at 60% 14%, #eee .1%, #0000 .2%),
+        radial-gradient(circle at 69% 15%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 60% 50%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 65% 21%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 70% 46%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 80% 15%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 87% 48%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 73% 56%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 75% 72%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 65% 90%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 99% 40%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 75% 32%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 78% 21%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 86% 40%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 71% 90%, #ccc 0%, #0000 .2%),
+        radial-gradient(circle at 90% 45%, #ccc 0%, #0000 .4%),
+        radial-gradient(circle at 86% 70%, #ccc 0%, #0000 .3%),
+        radial-gradient(circle at 95% 78%, #ccc 0%, #0000 .2%);
+        background-color: #0000;
+    }
+}
+
+.fondo::after{
+    content: '';
+    position: absolute;
+    width: 1000px;
+    height: 600px;
+    animation-name: fondoo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 9999;
+}
+
+@keyframes fondoo {
+    0%{
+        background-image: 
+        radial-gradient(circle at 8% 83%, #000a 2.2%, #0000 1%),
+        radial-gradient(circle at 8% 83%, #e00 4%, #0000 1%),
+        radial-gradient(circle at 8% 83%, #fff 4.5%, #0000 1%),
+        radial-gradient(circle at bottom left, #ee0000 10%,#0000 10%),
+        radial-gradient(circle at bottom left, #000a 10.25%, #0000 1%),
+        radial-gradient(circle at bottom left, #fff 10.5%, #0000 1%),
+        
+        radial-gradient(circle at 92% 17%, #000a 2.2%, #0000 1%),
+        radial-gradient(circle at 92% 17%, #00f 4%, #0000 1%),
+        radial-gradient(circle at 92% 17%, #fff 4.5%, #0000 1%),
+        radial-gradient(circle at top right, #0000ff 10%,#0000 10%),
+        radial-gradient(circle at top right, #000a 10.25%, #0000 1%),
+        radial-gradient(circle at top right, #fff 10.5%, #0000 1%);
+
+    }
+
+    100%{
+        background-image: 
+        radial-gradient(circle at 8% 83%, #000a 2.2%, #0000 1%),
+        radial-gradient(circle at 8% 83%, #e00 4%, #0000 1%),
+        radial-gradient(circle at 8% 83%, #fff 4.5%, #0000 1%),
+        radial-gradient(circle at bottom left, #ee0000 10%,#0000 10%),
+        radial-gradient(circle at bottom left, #000a 10.25%, #0000 1%),
+        radial-gradient(circle at bottom left, #fff 10.5%, #0000 1%),
+        
+        
+        radial-gradient(circle at 92% 17%, #000a 2.2%, #0000 1%),
+        radial-gradient(circle at 92% 17%, #00f 4%, #0000 1%),
+        radial-gradient(circle at 92% 17%, #fff 4.5%, #0000 1%),
+        radial-gradient(circle at top right, #0000ff 10%,#0000 10%),
+        radial-gradient(circle at top right, #000a 10.25%, #0000 1%),
+        radial-gradient(circle at top right, #fff 10.5%, #0000 1%);
+    }
+    
+}
